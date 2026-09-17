@@ -1452,6 +1452,16 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <a
+        href={`https://wa.me/${contactInfo.whatsapp}`}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat with AayurAahaar on WhatsApp"
+        title="Chat with us on WhatsApp"
+        className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-forest-900/20 transition-transform hover:scale-105 hover:bg-[#20bd5a] sm:bottom-6 sm:right-6"
+      >
+        <MessageCircle className="h-7 w-7" strokeWidth={2} />
+      </a>
     </div>
   );
 }
