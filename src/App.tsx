@@ -205,7 +205,7 @@ const contactInfo = {
   location: 'Pune | Mumbai',
   email: 'aayuraahaar@gmail.com',
   phone: '+91 96899 51305',
-  whatsapp: '919689951305',
+  whatsappUrl: 'https://api.whatsapp.com/send/?phone=919689951305&text=Hi+AayurAahaar+Team%21+I%27d+like+to+know+more+about+your+recipes+and+products.&type=phone_number&app_absent=0&utm_source=chatgpt.com',
   facebook: 'https://www.facebook.com/aayuraahaar',
   instagram: 'https://www.instagram.com/aayuraahaar/',
 };
@@ -1131,7 +1131,7 @@ function Contact() {
                 <div>
                   <p className="text-sm font-medium text-forest-600 mb-1">WhatsApp</p>
                   <a
-                    href={`https://wa.me/${contactInfo.whatsapp}`}
+                    href={contactInfo.whatsappUrl}
                     className="text-forest-700/70 hover:text-forest-600 transition-colors"
                   >
                     Chat with us directly
@@ -1248,7 +1248,7 @@ function Footer() {
               </a>
               <div className="flex items-center gap-4 pt-2">
                 <a
-                  href={`https://wa.me/${contactInfo.whatsapp}`}
+                  href={contactInfo.whatsappUrl}
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Chat with AayurAahaar on WhatsApp"
@@ -1453,7 +1453,7 @@ function App() {
       </main>
       <Footer />
       <a
-        href={`https://wa.me/${contactInfo.whatsapp}`}
+        href={contactInfo.whatsappUrl}
         target="_blank"
         rel="noreferrer"
         aria-label="Chat with AayurAahaar on WhatsApp"
